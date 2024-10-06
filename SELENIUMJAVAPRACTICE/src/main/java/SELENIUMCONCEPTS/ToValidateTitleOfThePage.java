@@ -18,7 +18,7 @@ public class ToValidateTitleOfThePage {
 		options.addArguments("start-maximized");
 		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://amazon.in");
+		driver.get("https://www.amazon.in");
 		String actualTitle = driver.getTitle();
 		String expectedTitle = "Online Shopping site in India";
 		if (actualTitle.equalsIgnoreCase(expectedTitle)) {
