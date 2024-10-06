@@ -1,9 +1,16 @@
 package SELENIUMCONCEPTS;
 
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class ScrollDownExampleUsingJavaScript {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options=new ChromeOptions();
+		options.addArguments("start-maximized");
+		
 
 	}
 
